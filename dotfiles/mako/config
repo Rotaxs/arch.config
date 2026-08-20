@@ -1,0 +1,42 @@
+# 全局与显示控制
+max-history=5
+max-visible=3
+default-timeout=5000
+ignore-timeout=0
+history=1
+actions=1
+
+# 字体与文本格式
+font=Noto Sans CJK SC 11
+text-alignment=left
+format=<b>%s</b>\n%b
+markup=1
+
+# 布局与外观
+anchor=top-right
+layer=overlay
+
+width=400
+height=300
+
+background-color=#24273AEE
+text-color=#CAD3F5FF
+border-color=#8AADF4FF
+border-size=1
+border-radius=8
+
+outer-margin=15
+margin=8
+padding=12
+
+# 图标与进度条
+icons=1
+max-icon-size=48
+icon-location=left
+icon-border-radius=6
+
+progress-color=over #8AADF4FF
+
+# 条件重写区块
+[urgency=high]
+border-color=#F5A97FFF
