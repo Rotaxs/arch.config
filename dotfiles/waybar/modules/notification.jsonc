@@ -1,0 +1,13 @@
+{
+    "custom/notification": {
+        "format": "<span color='#f5a97f'>\uf0a2</span>",
+        "format-dnd": "<span color='#a5adcb'>\uf078</span>",
+        "tooltip-format": "{text}",
+        "on-click": "makoctl dismiss",
+        "on-click-right": "makoctl mode -t dnd",
+        "return-type": "json",
+        "exec-if": "pgrep mako",
+        "exec": "printf '{\"text\": \"\\uf0a2\"}'",
+        "interval": 30
+    }
+}

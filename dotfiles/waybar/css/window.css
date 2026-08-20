@@ -1,0 +1,7 @@
+@import "color.css";
+
+window#waybar.empty #window {
+    background-color: transparent;
+    border: none;
+}
+

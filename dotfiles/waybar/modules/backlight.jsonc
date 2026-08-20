@@ -1,0 +1,10 @@
+{
+    "backlight": {
+        "format": "<span color='#7dc4e4'>{icon}</span> {percent}%",
+        "format-icons": ["󰃞", "󰃟", "󰃠"],
+        "on-scroll-up": "bash ~/.config/waybar/scripts/brightness.sh up",
+        "on-scroll-down": "bash ~/.config/waybar/scripts/brightness.sh down",
+        "min-brightness": 5,
+        "tooltip-format": "Brightness  {percent}%\n\nScroll Up   +1%\nScroll Down -1%"
+    }
+}

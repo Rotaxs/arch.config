@@ -1,0 +1,66 @@
+@import "css/color.css";
+@import "css/workspaces.css";
+@import "css/window.css";
+@import "css/hardware.css";
+@import "css/control.css";
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "FiraCode Nerd Font", "Noto Sans CJK SC";
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+window#waybar > box {
+    background-color: @base;
+    color: @text;
+    border-radius: 12px;
+    padding: 0 4px;
+}
+
+#hardware,
+#control,
+#workspaces,
+#window,
+#clock {
+    background-color: @surface0;
+    border: 1px solid @surface1;
+    border-radius: 10px;
+    padding: 2px 10px;
+    margin: 3px 4px;
+    color: @text;
+    transition: all 0.2s ease-in-out;
+}
+
+#clock:hover,
+#window:hover,
+#hardware #cpu:hover,
+#hardware #memory:hover,
+#control #pulseaudio:hover,
+#control #backlight:hover,
+#control #battery:hover,
+#control #network:hover,
+#control #bluetooth:hover {
+    background-color: @surface1;
+}
+
+tooltip {
+    background-color: transparent;
+}
+tooltip > box {
+    background-color: @base;
+    border: 1px solid @surface1;
+    border-radius: 8px;
+    color: @text;
+}
+tooltip lablel {
+     padding: 4px;
+}
+
+.modules-left, .modules-center, .modules-right {
+}

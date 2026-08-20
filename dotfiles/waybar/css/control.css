@@ -1,0 +1,18 @@
+@import "color.css";
+
+
+#control #pulseaudio,
+#control #backlight,
+#control #battery,
+#control #network,
+#control #bluetooth {
+    border: none; 
+    box-shadow: none;
+    background-color: transparent;
+    border-radius: 6px;
+    color: @text;
+    padding: 2px 8px;
+    margin: 0; 
+    transition: all 0.2s ease-in-out;
+}
+

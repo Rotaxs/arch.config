@@ -1,0 +1,40 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 36,
+    "spacing": 4,
+    "margin": "6px, 8px, 0px, 8px",
+    "reload_style_on_change": true,
+
+    "include": [
+        "~/.config/waybar/modules/clock.jsonc",
+        "~/.config/waybar/modules/window.jsonc",
+        "~/.config/waybar/modules/workspaces.jsonc",
+        "~/.config/waybar/modules/tray.jsonc",
+        "~/.config/waybar/modules/network.jsonc",
+        "~/.config/waybar/modules/bluetooth.jsonc",
+        "~/.config/waybar/modules/pulseaudio.jsonc",
+        "~/.config/waybar/modules/backlight.jsonc",
+        "~/.config/waybar/modules/battery.jsonc",
+        "~/.config/waybar/modules/notification.jsonc",
+        "~/.config/waybar/modules/cpu.jsonc",
+        "~/.config/waybar/modules/memory.jsonc",
+        "~/.config/waybar/modules/power.jsonc",
+        "~/.config/waybar/modules/group-hardware.jsonc",
+        "~/.config/waybar/modules/group-control.jsonc"
+    ],
+
+    "modules-left": [
+        "niri/workspaces",
+        "niri/window"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "group/hardware",
+        "group/control",
+        "custom/notification",
+        "custom/power"
+    ]
+}

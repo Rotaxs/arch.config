@@ -1,0 +1,12 @@
+{
+    "group/control": {
+        "orientation": "horizontal",
+        "modules": [
+            "pulseaudio",
+            "backlight",
+            "battery",
+            "network",
+            "bluetooth"
+        ]
+    }
+}

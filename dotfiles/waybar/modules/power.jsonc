@@ -1,0 +1,6 @@
+{
+    "custom/power": {
+        "format": "<span color='#ed8796'>\ueb7e</span>",
+        "on-click": "fuzzel"
+    }
+}

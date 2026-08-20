@@ -1,0 +1,10 @@
+{
+    "bluetooth": {
+        "format": "<span color='#a5adcb'>󰂲</span>",
+        "format-connected": "<span color='#8aadf4'>󰂱</span> {device_alias}",
+        "format-on": "<span color='#8aadf4'>󰂯</span>",
+        "tooltip-format": "Bluetooth Addr\t{controller_address}\n\n{controller_alias}\t{num_connections} connected",
+        "on-click": "(bluetoothctl show | grep -q \"Powered: yes\" && bluetoothctl power off || bluetoothctl power on) &>/dev/null",
+        "on-click-right": "alacritty -e bluetui"
+    }
+}

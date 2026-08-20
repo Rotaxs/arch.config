@@ -1,0 +1,25 @@
+{
+    "battery": {
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "interval": 60,
+        "format": "<span color='#eed49f'>{icon}</span> {capacity}%",
+        "format-charging": "<span color='#a6da95'>{icon}</span> {capacity}%",
+        "format-full": "<span color='#a6da95'>󰂅</span> {capacity}%",
+        "format-plugged": "<span color='#8aadf4'>󰚥</span> {capacity}%",
+        "format-icons": {
+            "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+            "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
+        },
+        "events": {
+            "on-discharging-warning": "notify-send -u normal '低电量警告'",
+            "on-discharging-critical": "notify-send -u critical '电量极低'",
+            "on-charging-100": "notify-send -u normal '电池已充满'",
+            "on-discharging": "notify-send -u normal '电源状态' '已断开外接电源'",
+            "on-charging": "notify-send -u normal '电源状态' '已连接外接电源'"
+        },
+        "tooltip-format": "{timeTo}\n\nhealth: {health}"
+    }
+}
