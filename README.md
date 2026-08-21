@@ -146,4 +146,14 @@ sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-rime
 - `fcitx5-chinese-addons`: 提供中文输入法
 - `fcitx5-rime`: 更好用的输入法（配合 [rime-ice](https://github.com/iDvel/rime-ice)
 
+## 其他
+
+Chrome 标签栏字体不是中文字体
+
+```bash
+# 1. 设置颜色模式为暗色
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+# 2. 设置系统界面字体
+gsettings set org.gnome.desktop.interface font-name 'Noto Sans CJK SC 11'
+```
 
