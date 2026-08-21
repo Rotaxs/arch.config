@@ -127,7 +127,11 @@ sudo pacman -S noto-fonts-cjk noto-fonts-emoji ttf-firacode-nerd
 ### 输入法
 
 ```bash
-sudo pacman -S 
+sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-rime
 ```
+
+- `fcitx5-im`: 提供 fctix5 本体，配置工具和输入法
+- `fcitx5-chinese-addons`: 提供中文输入法
+- `fcitx5-rime`: 更好用的输入法（配合 [rime-ice](https://github.com/iDvel/rime-ice)
 
 
