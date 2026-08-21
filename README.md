@@ -73,7 +73,7 @@ sudo systemctl enable --now tlp.service
 ```bash
 sudo pacman -S alsa-utils sof-firmware pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber wiremix
 
-systemctl --user enable --now pipewire wireplumber
+systemctl --user enable --now pipewire pipewire-pulse wireplumber
 ```
 
 - `alsa-utils`: 提供驱动工具与排查命令
