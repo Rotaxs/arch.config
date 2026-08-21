@@ -27,6 +27,18 @@ sudo systemctl enable --now iwd
 
 注意，`iwd` 并没有默认开启 DHCP 客户端，需要配置 `/etc/iwd/main.conf` 手动开启
 
+首先开启 `systemd-resolved` 服务
+
+```bash
+systemctl enable --now systemd-resolved
+```
+
+再把 `/etc/resolv.conf` 软链接到 `systemd` 托管的文件
+
+```bash
+ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+```
+
 ```conf
 [General]
 # 开启内置的 DHCP 客户端
