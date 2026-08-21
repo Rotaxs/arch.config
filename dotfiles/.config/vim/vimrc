@@ -1,0 +1,40 @@
+" 行号设置
+set number              " 显示行号
+set relativenumber      " 显示相对行号 (光标所在行为绝对行号，其余为相对行号)
+
+" 基础编辑与体验
+set encoding=utf-8      " 默认使用 utf-8 编码
+set history=1000        " 保存 1000 条历史命令
+set mouse=a             " 允许使用鼠标点击、滚动
+set clipboard+=unnamed  " 与系统剪贴板共享 (若 Vim 编译支持 clipboard)
+set backspace=2         " 让 Backspace 键能删除任意字符
+
+" 缩进与排版
+set autoindent          " 自动继承上一行的缩进方式
+set smartindent         " 智能缩进
+set tabstop=4           " 一个 Tab 字符占 4 个空格的宽度
+set shiftwidth=4        " 自动缩进时使用 4 个空格
+set expandtab           " 将 Tab 键输入的空格替换为空格字符
+
+" 搜索设置
+set hlsearch            " 高亮显示搜索匹配项
+set incsearch           " 边输入边匹配
+set ignorecase          " 搜索时忽略大小写
+set smartcase           " 如果搜索词包含大写字母，则自动变为大小写敏感
+
+" 外观与界面
+syntax on               " 开启语法高亮
+set cursorline          " 高亮当前光标所在行
+set scrolloff=5         " 光标上下移动时，距顶部/底部至少保持 5 行留白
+set showcmd             " 在右下角显示未完成的命令
+set laststatus=2        " 总是显示状态栏
+
+" 快捷键 
+" 普通模式下按 Esc 键直接清除搜索高亮
+nnoremap <Esc> :nohlsearch<CR>
+
+if has('vim_starting')
+    let &t_SI = "\<Esc>[5 q"  " 进入 Insert 模式时变竖线
+    let &t_EI = "\<Esc>[2 q"  " 退出 Insert (回到 Normal) 时变方块
+    let &t_SR = "\<Esc>[4 q"  " 进入 Replace 模式时变下划线
+endif
