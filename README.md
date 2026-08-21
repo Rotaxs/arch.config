@@ -146,6 +146,16 @@ sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-rime
 - `fcitx5-chinese-addons`: 提供中文输入法
 - `fcitx5-rime`: 更好用的输入法（配合 [rime-ice](https://github.com/iDvel/rime-ice)
 
+### 显卡驱动
+
+```bash
+sudo pacman -S mesa vulkan-intel intel-media-driver
+```
+
+- `mesa`: 提供 OpenGl 支持
+- `vulkan-intel`: Interl Arc 核显的 Vulkan 驱动
+- `intel-meida-driver`: 提供 VA-API 的视频硬件解码支持
+
 ## 其他
 
 Chrome 标签栏字体不是中文字体
