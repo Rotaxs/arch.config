@@ -1,0 +1,5 @@
+patch:
+  # 禁用 Rime 内部的 Shift 切换中英文
+  'ascii_composer/switch_key':
+    Shift_L: noop
+    Shift_R: noop
