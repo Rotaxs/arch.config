@@ -156,6 +156,27 @@ sudo pacman -S mesa vulkan-intel intel-media-driver
 - `vulkan-intel`: Interl Arc 核显的 Vulkan 驱动
 - `intel-meida-driver`: 提供 VA-API 的视频硬件解码支持
 
+### 剪切板
+
+```bash
+sudo pacman -S wl-clipboard cliphist fuzzel
+```
+
+- `wl-clipboard`: Wayland 下的底层剪切板工具，提供 `wl-copy` 和 `wl-paste` 工具
+- `cliphist`: 提供支持文本和图片的后台历史记录守护进程
+- `fuzzel`: 应用程序启动器，作为剪切板的前端显示部分
+
+然后需要在 `niri` 的配置文件中假如如下内容
+
+```kdl
+spawn-at-startup "wl-paste" "--watch" "cliphist" "store"    
+
+binds {
+    // 使用 fuzzel 查看并选择剪切板历史
+    Mod+V { spawn "sh" "-c" "cliphist list | fuzzel -d -p ' Clipboard: ' | cliphist decode | wl-copy"; }
+}
+```
+
 ## 其他
 
 Chrome 标签栏字体不是中文字体
