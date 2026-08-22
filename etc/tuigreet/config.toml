@@ -1,0 +1,29 @@
+[display]
+show_time = false
+greeting = "Welcome to Arch Linux"
+align_greeting = "center"
+
+[layout]
+width = 90
+window_padding = 2
+container_padding = 1
+prompt_padding = 1
+
+[layout.widgets]
+time_position = "default"
+status_position = "bottom"
+
+[remember]
+username = true
+
+[user_menu]
+enable = true
+
+[secret]
+mode = "characters"
+characters = "*"
+
+[background]
+kind = "none"
+fps = 30
+

@@ -185,6 +185,17 @@ binds {
 }
 ```
 
+### 登录管理器
+
+```bash
+sudo pacman -S greetd greetd-tuigreet
+
+sudo systemctl enable greetd
+```
+
+- `greetd`: 提供登录管理器的守护进程
+- `greetd-tuigreet`: 基于 `greetd` 的登录管理器前端
+
 ## 其他
 
 Chrome 标签栏字体不是中文字体
