@@ -153,8 +153,8 @@ sudo pacman -S mesa vulkan-intel intel-media-driver
 ```
 
 - `mesa`: 提供 OpenGl 支持
-- `vulkan-intel`: Interl Arc 核显的 Vulkan 驱动
-- `intel-meida-driver`: 提供 VA-API 的视频硬件解码支持
+- `vulkan-intel`: Intel Arc 核显的 Vulkan 驱动
+- `intel-media-driver`: 提供 VA-API 的视频硬件解码支持
 
 ### 剪切板和截屏
 
@@ -177,7 +177,7 @@ spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 
 binds {
     // 使用 fuzzel 查看并选择剪切板历史
-    Mod+V { spawn "sh" "-c" "cliphist list | fuzzel -d -p ' Clipboard: ' | cliphist decode | wl-copy"; }
+    Mod+Alt+V { spawn "sh" "-c" "cliphist list | fuzzel -d -p ' Clipboard: ' | cliphist decode | wl-copy"; }
     // 区域截图：选区 -> 自动复制到剪贴板 -> 存入图片目录
     Mod+Shift+S { spawn "sh" "-c" "grim -g \"$(slurp)\" - | wl-copy && wl-paste > ~/Pictures/Screenshots/Screenshot_$(date +'%Y%m%m_%H%M%S').png"; }
     // 交互式标注截图：选区 -> 唤起 Swappy 标注 -> 自由保存/复制
