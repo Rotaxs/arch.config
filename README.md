@@ -58,7 +58,7 @@ sudo systemctl restart iwd
 ### 电源管理
 
 ```bash
-sudo pacman -S tlp swayidle swaylock upower
+sudo pacman -S tlp swayidle swaylock-effects upower
 
 sudo systemctl enable --now tlp.service
 ```
