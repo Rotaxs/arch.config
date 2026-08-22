@@ -156,17 +156,21 @@ sudo pacman -S mesa vulkan-intel intel-media-driver
 - `vulkan-intel`: Interl Arc 核显的 Vulkan 驱动
 - `intel-meida-driver`: 提供 VA-API 的视频硬件解码支持
 
-### 剪切板
+### 剪切板和截屏
 
 ```bash
-sudo pacman -S wl-clipboard cliphist fuzzel
+sudo pacman -S wl-clipboard cliphist fuzzel grim slurp swappy
 ```
 
 - `wl-clipboard`: Wayland 下的底层剪切板工具，提供 `wl-copy` 和 `wl-paste` 工具
 - `cliphist`: 提供支持文本和图片的后台历史记录守护进程
 - `fuzzel`: 应用程序启动器，作为剪切板的前端显示部分
+- `grim`: Wayland 原生截图底层工具
+- `slurp`: 用于获取屏幕上指定区域
+- `swappy`: 图片标注工具
 
-然后需要在 `niri` 的配置文件中假如如下内容
+
+然后需要在 `niri` 的配置文件中添加如下内容
 
 ```kdl
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"    
@@ -174,6 +178,10 @@ spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 binds {
     // 使用 fuzzel 查看并选择剪切板历史
     Mod+V { spawn "sh" "-c" "cliphist list | fuzzel -d -p ' Clipboard: ' | cliphist decode | wl-copy"; }
+    // 区域截图：选区 -> 自动复制到剪贴板 -> 存入图片目录
+    Mod+Shift+S { spawn "sh" "-c" "grim -g \"$(slurp)\" - | wl-copy && wl-paste > ~/Pictures/Screenshots/Screenshot_$(date +'%Y%m%m_%H%M%S').png"; }
+    // 交互式标注截图：选区 -> 唤起 Swappy 标注 -> 自由保存/复制
+    Print { spawn "sh" "-c" "grim -g \"$(slurp)\" - | swappy -f -"; }
 }
 ```
 

@@ -305,6 +305,7 @@ layout {
 spawn-at-startup "fcitx5"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "awww-daemon"
+spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -402,7 +403,7 @@ binds {
 
     // My own key binds
     Mod+B hotkey-overlay-title="Open/Close waybar" { spawn-sh "pkill waybar || waybar"; }
-
+    Mod+Alt+V hotkey-overlay-title="Open clipboard" { spawn "sh" "-c" "cliphist list | fuzzel -d -p ' Clipboard: ' | cliphist decode | wl-copy"; }
 
     // Mod-Shift-/, which is usually the same as Mod-?,
     // shows a list of important hotkeys.
@@ -650,7 +651,8 @@ binds {
     // Mod+Space       { switch-layout "next"; }
     // Mod+Shift+Space { switch-layout "prev"; }
 
-    Mod+Shift+S { screenshot; }
+    Mod+Shift+S { spawn "sh" "-c" "grim -g \"$(slurp)\" - | wl-copy && wl-paste > ~/Pictures/Screenshots/Screenshot_$(date +'%Y%m%m_%H%M%S').png"; }
+    Print { spawn "sh" "-c" "grim -g \"$(slurp)\" - | swappy -f -"; } 
     Ctrl+Print { screenshot-screen; }
     Mod+Shift+Ctrl+S { screenshot-window; }
 
