@@ -8,7 +8,7 @@
         "tooltip-format-ethernet": "{ifname} ",
         "tooltip-format-disconnected": "Disconnected",
         "format-icons": [ "󰤯", "󰤟", "󰤢", "󰤥", "󰤨" ],
-        "on-click": "(iwctl device wlan0 show | grep -qi \"Powered.*on\" && iwctl device wlan0 set-property Powered off || iwctl device wlan0 set-property Powered on) &>/dev/null",
-        "on-click-right": "alacritty -e impala"
+        "on-click": "bash ~/.config/waybar/scripts/wifi.sh",
+        "on-click-right": "alacritty -e nmtui"
     }
 }

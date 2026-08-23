@@ -16,43 +16,10 @@
 
 ### 网络管理
 
-```bash
-sudo pacman -S iwd impala
-
-sudo systemctl enable --now iwd
-```
-
-- `iwd`: 提供网络连接的底层服务，提供 CLI 工具 `iwctl`
-- `impala`: TUI 网络连接工具
-
-注意，`iwd` 并没有默认开启 DHCP 客户端，需要配置 `/etc/iwd/main.conf` 手动开启
-
-首先开启 `systemd-resolved` 服务
+这里使用 `networkmanager`（显然这个必须在 live 环境内装好）
 
 ```bash
-systemctl enable --now systemd-resolved
-```
-
-再把 `/etc/resolv.conf` 软链接到 `systemd` 托管的文件
-
-```bash
-ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
-```
-
-```conf
-[General]
-# 开启内置的 DHCP 客户端
-EnableNetworkConfiguration=true
-
-[Network]
-# 使用内置的域名解析
-NameResolvingService=systemd
-```
-
-然后重启 `iwd` 服务
-
-```bash
-sudo systemctl restart iwd
+pacstrap -K /mnt networkmanager
 ```
 
 ### 电源管理
@@ -198,7 +165,7 @@ sudo systemctl enable greetd
 
 ## 其他
 
-Chrome 标签栏字体不是中文字体
+解决 Chrome 标签栏字体不是中文字体的问题
 
 ```bash
 # 1. 设置颜色模式为暗色
