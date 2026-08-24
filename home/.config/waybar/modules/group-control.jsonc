@@ -6,7 +6,8 @@
             "backlight",
             "battery",
             "network",
-            "bluetooth"
+            "bluetooth",
+            "custom/power"
         ]
     }
 }

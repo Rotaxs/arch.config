@@ -1,6 +1,7 @@
 {
     "custom/power": {
-        "format": "<span color='#ed8796'>\ueb7e</span>",
-        "on-click": "fuzzel"
+        "format": "<span color='#ed8796'>⏻</span>",
+        "tooltip": false,
+        "on-click": "wlogout"
     }
 }

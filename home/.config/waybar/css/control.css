@@ -5,7 +5,8 @@
 #control #backlight,
 #control #battery,
 #control #network,
-#control #bluetooth {
+#control #bluetooth,
+#control #custom-power {
     border: none; 
     box-shadow: none;
     background-color: transparent;

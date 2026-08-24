@@ -45,7 +45,8 @@ window#waybar > box {
 #control #backlight:hover,
 #control #battery:hover,
 #control #network:hover,
-#control #bluetooth:hover {
+#control #bluetooth:hover,
+#control #custom-power:hover {
     background-color: @surface1;
 }
 
