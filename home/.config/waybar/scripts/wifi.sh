@@ -6,7 +6,7 @@ active_wifi=$(nmcli -t -f NAME,TYPE connection show --active | grep 'wireless' |
 if [ -n "$active_wifi" ]; then
     # 如果当前连着网，则安全断开 wlan0 设备（保持图标和射频在线）
     nmcli device disconnect wlan0
-    notify-send "Wi-Fi" "已断开连接" -t 1500
+    notify-send "Wi-Fi" "Disconnected" -t 1500
 else
     # 如果当前没连网，则尝试重新激活最近一次使用的无线连接
     last_wifi=$(nmcli -t -f NAME,TYPE connection show | grep 'wireless' | head -n1 | cut -d: -f1)
