@@ -26,6 +26,7 @@ pacstrap -K /mnt networkmanager
 
 ```bash
 sudo pacman -S tlp swayidle swaylock-effects upower
+paru -S wlogout
 
 sudo systemctl enable --now tlp.service
 ```
@@ -34,6 +35,7 @@ sudo systemctl enable --now tlp.service
 - `swayidle`: 空闲时间监听，监听鼠标/键盘输入，超时自动触发熄屏
 - `swaylock`: 提供 Wayland 下的图形锁屏界面
 - `upower`: 状态查询接口
+- `wlogout`: 提供登出菜单
 
 ### 音频管理
 

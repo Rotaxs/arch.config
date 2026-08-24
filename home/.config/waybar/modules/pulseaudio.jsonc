@@ -1,12 +1,13 @@
 {
     "pulseaudio": {
         "format": "<span color='#8bd5ca'>{icon}</span> {volume}%",
-        "format-muted": "<span color='#a5adcb'>\ue03a</span> {volume}%",
+        "format-muted": "<span color='#a5adcb'>󰝟</span> {volume}%",
         "format-icons": {
             "default": ["\uf027", "\uf027", "\uf028"]
         },
+        "tooltip-format": "Volume:      {volume}%\n\nScroll Up:   +5%\nScroll Down: -5%",
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
-        "on-click-right": "pavucontrol",
+        "on-click-right": "alacritty -e wiremix",
         "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
         "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
     }
