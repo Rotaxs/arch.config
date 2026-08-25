@@ -10,9 +10,12 @@
 - 文件管理器: [yazi](https://github.com/sxyazi/yazi), [nautilus](https://github.com/GNOME/nautilus)
 - 资源监视器: [btop](https://github.com/aristocratos/btop)
 - 壁纸: [awww](https://codeberg.org/LGFae/awww)
-- 浏览器: chrome
+- 浏览器: [Zen Browser](https://zen-browser.app/)
+- 图片查看器: [imv](https://github.com/exec64/imv)
+- 视频播放器: [mpv](https://mpv.io/)
+- Markdown: [glow](https://github.com/charmbracelet/glow), [obsidian](https://obsidian.md/)
 
-## 必要软件安装
+## 基本软件安装
 
 ### 网络管理
 
