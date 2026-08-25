@@ -1,30 +1,21 @@
-return {
-  'nvim-treesitter/nvim-treesitter',
-  lazy = false,
-  build = ':TSUpdate',
-
-  config = function()
-    local ts = require('nvim-treesitter')
-
-    local common_languages = {
-      'lua', 'vim', 'vimdoc', 'query', 'json', 'yaml', 'toml', 'markdown', 'markdown_inline',
-      'c', 'cpp', 'rust', 'go', 'python', 'java',
-      'html', 'css', 'javascript', 'typescript', 'tsx', 'bash'
-    }
-    ts.install(common_languages)
-
-    vim.opt.foldlevel = 99
-    vim.opt.foldlevelstart = 99
-    vim.opt.foldenable = true
-
-    vim.api.nvim_create_autocmd('FileType', {
-      pattern = common_languages,
-      callback = function()
-        pcall(vim.treesitter.start)
-        vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
-        vim.wo.foldmethod = 'expr'
-        vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
-      end,
-    })
-  end,
+local ensure_installed = {
+    "cpp", "c", "lua",
+    "markdown_inline"
 }
+
+require("nvim-treesitter").install(ensure_installed)
+
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "*",
+    callback = function(args)
+        local buf = args.buf
+        local ft = vim.bo[buf].filetype
+        local lang = vim.treesitter.language.get_lang(ft)
+        if not lang then
+            return
+        end
+        pcall(vim.treesitter.start, buf, lang)
+    end,
+})
+
+
