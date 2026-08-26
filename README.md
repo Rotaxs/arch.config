@@ -1,4 +1,4 @@
-# arch.conf
+# arch.config
 
 ## 软件一览
 
@@ -98,6 +98,18 @@ sudo pacman -S xdg-desktop-portal-gnome xdg-desktop-portal-gtk
 ```
 
 `xdg-desktop-portal` 提供应用调用原生桌面资源的接口，而 `xdg-desktop-portal-gnome/gtk` 是具体的图形后端实现
+
+### 快照
+
+```bash
+sudo pacman -S timeshift grub-btrfs inotify-tools
+
+sudo systemctl enable --now grub-btrfsd.service
+```
+
+- `timeshift`: 快照创建与管理工具
+- `grub-btrfs`: 使 Grub 引导界面能够显示快照
+- `inotify-tool`: 为 `grub-btrfs` 提供监听能力，只要有快照产生，就刷新 Grub 菜单
 
 ### 字体
 
