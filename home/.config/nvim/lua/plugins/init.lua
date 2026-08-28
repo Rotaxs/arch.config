@@ -6,6 +6,7 @@ vim.pack.add({
     "https://github.com/nvim-mini/mini.nvim",
     "https://github.com/neovim/nvim-lspconfig",
     "https://github.com/mason-org/mason.nvim",
+    -- "https://github.com/lewis6991/gitsigns.nvim",
     { src = "https://github.com/nvim-treesitter/nvim-treesitter", branch = "main" },
     { src = "https://github.com/catppuccin/nvim", name = "catppuccin" },
     { src = "https://github.com/nvim-telescope/telescope.nvim", version = "*" },
@@ -18,6 +19,7 @@ vim.cmd.colorscheme("catppuccin-nvim")
 
 -- 加载各插件配置
 require("lualine").setup()
+-- require("gitsigns").setup()
 require("plugins.telescope")
 require("plugins.mini")
 require("plugins.treesitter")
