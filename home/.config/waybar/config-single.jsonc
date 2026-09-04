@@ -1,0 +1,17 @@
+{
+    "output": "eDP-1",
+    "include": [
+        "~/.config/waybar/config.jsonc"
+    ],
+    "modules-left": [
+        "niri/workspaces",
+        "niri/window"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "group/hardware",
+        "group/control"
+    ]
+}
