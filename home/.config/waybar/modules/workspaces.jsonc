@@ -2,6 +2,6 @@
     "niri/workspaces": {
         "format": "{index}",
         "disable-click": false,
-        "all-outputs": true
+        "all-outputs": false
     }
 }

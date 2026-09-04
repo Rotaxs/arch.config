@@ -5,10 +5,10 @@
             "critical": 10
         },
         "interval": 60,
-        "format": "<span color='#eed49f'>{icon}</span> {capacity}%",
-        "format-charging": "<span color='#a6da95'>{icon}</span> {capacity}%",
-        "format-full": "<span color='#a6da95'>󰂅</span> {capacity}%",
-        "format-plugged": "<span color='#8aadf4'>󰚥</span> {capacity}%",
+        "format": "<span color='#ccbc8d'>{icon}</span> {capacity}%",
+        "format-charging": "<span color='#a8c2ad'>{icon}</span> {capacity}%",
+        "format-full": "<span color='#a8c2ad'>󰂅</span> {capacity}%",
+        "format-plugged": "<span color='#a8bfd2'>󰚥</span> {capacity}%",
         "format-icons": {
             "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
             "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]

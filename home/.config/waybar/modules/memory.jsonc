@@ -1,6 +1,6 @@
 {
     "memory": {
-        "format": "<span color='#f5a97f'></span> {used:0.1f}G",
+        "format": "<span color='#d6d6d6'></span> {used:0.1f}G",
         "interval": 2,
         "on-click-right": "alacritty -e btop"
     }

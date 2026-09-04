@@ -96,11 +96,11 @@ blur {
 output "eDP-1" {
 	mode "2560x1600@120.000"
 	scale 1.5
-	position x=0 y=900
+	position x=1920 y=0
 }
 output "HDMI-A-1" {
 	mode "1920x1080@60.000"
-	scale 1.2
+	scale 1
 	position x=0 y=0
 	focus-at-startup
 }
@@ -201,7 +201,7 @@ layout {
 
         // Color of the ring on the active monitor.
         // active-color "#7fc8ff"
-        active-color "#8aadf4"
+        active-color "#a8bfd2"
 
         // Color of the ring on inactive monitors.
         //
@@ -232,11 +232,11 @@ layout {
         off
 
         width 4
-        active-color "#ffc87f"
+        active-color "#d6d6d6"
         inactive-color "#505050"
 
         // Color of the border around windows that request your attention.
-        urgent-color "#9b0000"
+        urgent-color "#a66f6f"
 
         // Gradients can use a few different interpolation color spaces.
         // For example, this is a pastel rainbow gradient via in="oklch longer hue".
@@ -301,7 +301,7 @@ layout {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 
-// spawn-at-startup "waybar"
+spawn-sh-at-startup "~/.config/waybar/scripts/manager.sh"
 spawn-at-startup "fcitx5"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "awww-daemon"
@@ -346,7 +346,6 @@ window-rule {
     draw-border-with-background false
     clip-to-geometry true
     geometry-corner-radius 10
-    opacity 0.90   
     background-effect {
         blur true
         xray false
@@ -403,7 +402,7 @@ binds {
     // `niri msg action do-something`.
 
     // My own key binds
-    Mod+B hotkey-overlay-title="Open/Close waybar" { spawn-sh "pkill waybar || waybar"; }
+    Mod+B hotkey-overlay-title="Open/Close waybar" { spawn-sh "pkill -x waybar || ~/.config/waybar/scripts/start.sh"; }
     Mod+Alt+V hotkey-overlay-title="Open clipboard" { spawn "sh" "-c" "cliphist list | fuzzel -d -p ' Clipboard: ' | cliphist decode | wl-copy"; }
 
     // Mod-Shift-/, which is usually the same as Mod-?,

@@ -5,7 +5,7 @@
     box-shadow: none;
     text-shadow: none;
     background: transparent;
-    color: @subtext0;
+    color: @muted;
     min-width: 12px;
     min-height: 22px;
     padding: 0 6px;
@@ -22,11 +22,11 @@
 
 #workspaces button.focused,
 #workspaces button.active {
-    background-color: @blue;
+    background-color: @accent;
     color: @base;
 }
 
 #workspaces button.urgent {
-    background-color: @red;
+    background-color: @danger;
     color: @base;
 }

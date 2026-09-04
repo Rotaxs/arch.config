@@ -1,8 +1,8 @@
 {
     "network": {
-        "format-wifi": "<span color='#c6a0f6'>{icon}</span> {signalStrength}%",
-        "format-ethernet": "<span color='#c6a0f6'>󰈀</span>",
-        "format-disconnected": "<span color='#ed8796'>󰤮</span>",
+        "format-wifi": "<span color='#a8bfd2'>{icon}</span> {signalStrength}%",
+        "format-ethernet": "<span color='#a8bfd2'>󰈀</span>",
+        "format-disconnected": "<span color='#dc9696'>󰤮</span>",
         "tooltip-format": "{ifname}",
         "tooltip-format-wifi": "{essid}  {ipaddr}\n\nUp: {bandwidthUpBytes}\tDown: {bandwidthDownBytes}",
         "tooltip-format-ethernet": "{ifname} ",

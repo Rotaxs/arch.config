@@ -1,8 +1,8 @@
 {
     "bluetooth": {
-        "format": "<span color='#a5adcb'>󰂲</span> {num_connections}",
-        "format-connected": "<span color='#8aadf4'>󰂱</span> {num_connections}",
-        "format-on": "<span color='#8aadf4'>󰂯</span> {num_connections}",
+        "format": "<span color='#8c8c8c'>󰂲</span> {num_connections}",
+        "format-connected": "<span color='#a8bfd2'>󰂱</span> {num_connections}",
+        "format-on": "<span color='#a8bfd2'>󰂯</span> {num_connections}",
         "tooltip-format": "Bluetooth Addr\t{controller_address}\n\n{controller_alias}\t{num_connections} connected",
         "on-click": "bash ~/.config/waybar/scripts/bluetooth.sh",
         "on-click-right": "alacritty -e bluetui"

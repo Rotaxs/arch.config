@@ -1,6 +1,6 @@
 {
     "custom/power": {
-        "format": "<span color='#ed8796'>⏻</span>",
+        "format": "<span color='#dc9696'>⏻</span>",
         "tooltip": false,
         "on-click": "wlogout"
     }

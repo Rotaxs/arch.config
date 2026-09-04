@@ -20,17 +20,5 @@
         "~/.config/waybar/modules/power.jsonc",
         "~/.config/waybar/modules/group-hardware.jsonc",
         "~/.config/waybar/modules/group-control.jsonc"
-    ],
-
-    "modules-left": [
-        "niri/workspaces",
-        "niri/window"
-    ],
-    "modules-center": [
-        "clock"
-    ],
-    "modules-right": [
-        "group/hardware",
-        "group/control"
     ]
 }

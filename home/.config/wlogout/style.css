@@ -11,7 +11,7 @@ window {
 
 button {
     border-radius: 0;
-    border-color: @crust;
+    border-color: @border;
 	text-decoration-color: @text;
     color: @text;
 	background-color: @surface0;
@@ -23,7 +23,7 @@ button {
 }
 
 button:active, button:hover {
-	background-color: @blue;
+	background-color: @bright;
 	color: @base;
 	outline-style: none;
 }

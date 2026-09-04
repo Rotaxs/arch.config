@@ -18,18 +18,18 @@ indicator-thickness=2
 font=LXGW WenKai
 font-size=128
 
-ring-color=8aadf4
-ring-clear-color=f5a97f
-ring-ver-color=8aadf4
-ring-wrong-color=ed8796
+ring-color=d6d6d6
+ring-clear-color=a0a0a0
+ring-ver-color=94a899
+ring-wrong-color=bd8585
 
-key-hl-color=80b3ff
-bs-hl-color=ed8796
+key-hl-color=f2f2f2
+bs-hl-color=bd8585
 
-inside-color=24273a80
-inside-clear-color=24273a80
-inside-ver-color=24273a80
-inside-wrong-color=24273a80
+inside-color=16161680
+inside-clear-color=16161680
+inside-ver-color=16161680
+inside-wrong-color=16161680
 
 line-color=00000000
 line-clear-color=00000000
@@ -37,7 +37,7 @@ line-ver-color=00000000
 line-wrong-color=00000000
 
 separator-color=00000000
-text-color=cad3f5
-text-clear-color=f5a97f
-text-ver-color=8aadf4
-text-wrong-color=ed8796
+text-color=d6d6d6
+text-clear-color=a0a0a0
+text-ver-color=94a899
+text-wrong-color=bd8585

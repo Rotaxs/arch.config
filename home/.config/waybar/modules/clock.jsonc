@@ -1,6 +1,6 @@
 {
     "clock": {
-        "format": "<span color='#8aadf4'>󰥔</span> {:%Y-%m-%d %a %H:%M}",
+        "format": "<span color='#d6d6d6'>󰥔</span> {:%Y-%m-%d %a %H:%M}",
         "tooltip": false
     }
 }

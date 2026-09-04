@@ -6,76 +6,76 @@ blur = true
 
 [font]
 size = 12
-normal = { family = "FiraCode Nerd Font Mono", style = "Regular" }
-bold = { family = "FiraCode Nerd Font Mono", style = "Bold" }
-italic = { family = "FiraCode Nerd Font Mono", style = "Italic" }
-bold_italic = { family = "FiraCode Nerd Font Mono", style = "Bold Italic" }
+normal = { family = "JetBrains Mono", style = "Regular" }
+bold = { family = "JetBrains Mono", style = "Bold" }
+italic = { family = "JetBrains Mono", style = "Italic" }
+bold_italic = { family = "JetBrains Mono", style = "Bold Italic" }
 
 [colors.primary]
-background = "#24273a"
-foreground = "#cad3f5"
-dim_foreground = "#8087a2"
-bright_foreground = "#cad3f5"
+background = "#161616"
+foreground = "#e4e4e4"
+dim_foreground = "#a0a0a0"
+bright_foreground = "#f6f6f6"
 
 [colors.cursor]
-text = "#24273a"
-cursor = "#f4dbd6"
+text = "#161616"
+cursor = "#f2f2f2"
 
 [colors.vi_mode_cursor]
-text = "#24273a"
-cursor = "#b7bdf8"
+text = "#161616"
+cursor = "#d6d6d6"
 
 [colors.search.matches]
-foreground = "#24273a"
-background = "#a5adcb"
+foreground = "#161616"
+background = "#a0a0a0"
 
 [colors.search.focused_match]
-foreground = "#24273a"
-background = "#a6da95"
+foreground = "#161616"
+background = "#f2f2f2"
 
 [colors.footer_bar]
-foreground = "#24273a"
-background = "#a5adcb"
+foreground = "#161616"
+background = "#a0a0a0"
 
 [colors.hints.start]
-foreground = "#24273a"
-background = "#eed49f"
+foreground = "#161616"
+background = "#d6d6d6"
 
 [colors.hints.end]
-foreground = "#24273a"
-background = "#a5adcb"
+foreground = "#161616"
+background = "#8c8c8c"
 
 [colors.selection]
-text = "#24273a"
-background = "#f4dbd6"
+text = "#161616"
+background = "#d6d6d6"
 
 [colors.normal]
-black = "#494d64"
-red = "#ed8796"
-green = "#a6da95"
-yellow = "#eed49f"
-blue = "#8aadf4"
-magenta = "#f5bde6"
-cyan = "#8bd5ca"
-white = "#b8c0e0"
+black = "#2a2a2a"
+red = "#c47f7f"
+green = "#91ad98"
+yellow = "#b6a678"
+blue = "#8faac1"
+magenta = "#aa8dab"
+cyan = "#84aaa8"
+white = "#dedede"
 
 [colors.bright]
-black = "#5b6078"
-red = "#ed8796"
-green = "#a6da95"
-yellow = "#eed49f"
-blue = "#8aadf4"
-magenta = "#f5bde6"
-cyan = "#8bd5ca"
-white = "#a5adcb"
+black = "#555555"
+red = "#dc9696"
+green = "#a8c2ad"
+yellow = "#ccbc8d"
+blue = "#a8bfd2"
+magenta = "#c0a5c1"
+cyan = "#9fc3c1"
+white = "#f6f6f6"
 
 [[colors.indexed_colors]]
 index = 16
-color = "#f5a97f"
+color = "#c89478"
 
 [[colors.indexed_colors]]
 index = 17
-color = "#f4dbd6"
+color = "#d8b1b1"
 
 [cursor]
 thickness = 0.1

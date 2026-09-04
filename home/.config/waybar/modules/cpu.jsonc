@@ -1,6 +1,6 @@
 {
     "cpu": {
-        "format": "<span color='#f5a97f'></span> {usage}%",
+        "format": "<span color='#d6d6d6'></span> {usage}%",
         "interval": 2,
         "on-click-right": "alacritty -e btop"
     }
