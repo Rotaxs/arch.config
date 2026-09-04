@@ -14,7 +14,7 @@ config.cursor_blink_rate = 800
 config.default_cursor_style = "BlinkingBar"
 config.cursor_thickness = 1
 
-config.window_decorations = "RESIZE"
+config.window_decorations = "NONE"
 
 config.hide_tab_bar_if_only_one_tab = true
 config.use_fancy_tab_bar = true
