@@ -7,7 +7,7 @@ history=1
 actions=1
 
 # 字体与文本格式
-font=Noto Sans CJK SC 11
+font=FiraCode Nerd Font, LXGW WenKai 11
 text-alignment=left
 format=<b>%s</b>\n%b
 markup=1
@@ -38,5 +38,12 @@ icon-border-radius=6
 progress-color=over #A0A0A0FF
 
 # 条件重写区块
-[urgency=high]
+[urgency=low]
+format=<b>󰂚 %s</b>\n%b
+
+[urgency=normal]
+format=<b>󰍡 %s</b>\n%b
+
+[urgency=critical]
+format=<b>󰀪 %s</b>\n%b
 border-color=#A66F6FFF
