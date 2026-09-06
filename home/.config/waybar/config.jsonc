@@ -1,9 +1,8 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 36,
     "spacing": 4,
-    "margin": "6px, 8px, 0px, 8px",
+    "margin": "2px, 8px, 0px, 8px",
     "reload_style_on_change": true,
 
     "include": [

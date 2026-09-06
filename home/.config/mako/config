@@ -19,9 +19,9 @@ layer=overlay
 width=400
 height=300
 
-background-color=#161616EE
-text-color=#D6D6D6FF
-border-color=#444444FF
+background-color=#202020EE
+text-color=#E8E8E8FF
+border-color=#505050FF
 border-size=1
 border-radius=8
 
@@ -35,7 +35,7 @@ max-icon-size=48
 icon-location=left
 icon-border-radius=6
 
-progress-color=over #A0A0A0FF
+progress-color=over #A8A8A8FF
 
 # 条件重写区块
 [urgency=low]
@@ -46,4 +46,4 @@ format=<b>󰍡 %s</b>\n%b
 
 [urgency=critical]
 format=<b>󰀪 %s</b>\n%b
-border-color=#A66F6FFF
+border-color=#D18B8BFF

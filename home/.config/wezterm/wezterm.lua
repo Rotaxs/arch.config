@@ -26,78 +26,78 @@ config.tab_max_width = 40
 config.inactive_pane_hsb = { saturation = 0.5, brightness = 0.85 }
 
 config.window_frame = {
-    inactive_titlebar_bg = "#161616",
-    active_titlebar_bg = "#161616",
-    inactive_titlebar_fg = "#8c8c8c",
-    active_titlebar_fg = "#d6d6d6",
-    inactive_titlebar_border_bottom = "#383838",
-    active_titlebar_border_bottom = "#444444",
-    button_fg = "#8c8c8c",
-    button_bg = "#161616",
+    inactive_titlebar_bg = "#202020",
+    active_titlebar_bg = "#202020",
+    inactive_titlebar_fg = "#a0a0a0",
+    active_titlebar_fg = "#dedede",
+    inactive_titlebar_border_bottom = "#444444",
+    active_titlebar_border_bottom = "#505050",
+    button_fg = "#a0a0a0",
+    button_bg = "#202020",
     button_hover_fg = "#f2f2f2",
-    button_hover_bg = "#2a2a2a",
+    button_hover_bg = "#363636",
 }
 
 config.colors = {
-    foreground = "#e4e4e4",
-    background = "#161616",
+    foreground = "#e8e8e8",
+    background = "#202020",
 
     cursor_bg = "#f2f2f2",
-    cursor_fg = "#161616",
+    cursor_fg = "#202020",
     cursor_border = "#f2f2f2",
 
     selection_bg = "#d6d6d6",
-    selection_fg = "#161616",
+    selection_fg = "#202020",
 
-    split = "#383838",
-    visual_bell = "#2a2a2a",
+    split = "#444444",
+    visual_bell = "#363636",
     compose_cursor = "#d6d6d6",
 
     tab_bar = {
-        background = "#161616",
+        background = "#202020",
         active_tab = {
-            bg_color = "#202020",
+            bg_color = "#2a2a2a",
             fg_color = "#f2f2f2",
             intensity = "Bold",
         },
         inactive_tab = {
-            bg_color = "#161616",
-            fg_color = "#8c8c8c",
+            bg_color = "#202020",
+            fg_color = "#a0a0a0",
         },
         inactive_tab_hover = {
-            bg_color = "#2a2a2a",
-            fg_color = "#d6d6d6",
+            bg_color = "#363636",
+            fg_color = "#dedede",
         },
         new_tab = {
-            bg_color = "#161616",
-            fg_color = "#8c8c8c",
+            bg_color = "#202020",
+            fg_color = "#a0a0a0",
         },
         new_tab_hover = {
-            bg_color = "#2a2a2a",
+            bg_color = "#363636",
             fg_color = "#f2f2f2",
         },
     },
 
     ansi = {
-        "#2a2a2a",
-        "#c47f7f",
-        "#91ad98",
-        "#b6a678",
-        "#8faac1",
-        "#aa8dab",
-        "#84aaa8",
-        "#dedede",
+        "#363636",
+        "#d18b8b",
+        "#9ebaa5",
+        "#c2b486",
+        "#9bb7cf",
+        "#b59ab6",
+        "#91b8b6",
+        "#e6e6e6",
     },
 
     brights = {
-        "#555555",
-        "#dc9696",
-        "#a8c2ad",
-        "#ccbc8d",
-        "#a8bfd2",
-        "#c0a5c1",
-        "#9fc3c1",
-        "#f6f6f6",
+        "#666666",
+        "#e2a0a0",
+        "#b2cbb7",
+        "#d4c492",
+        "#b2cbe0",
+        "#c9aec9",
+        "#abd0ce",
+        "#fafafa",
     },
 
     indexed = {

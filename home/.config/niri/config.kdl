@@ -192,7 +192,7 @@ layout {
         // off
 
         // How many logical pixels the ring extends out from the windows.
-        width 1
+        width 2
 
         // Colors can be set in a variety of ways:
         // - CSS named colors: "red"
@@ -201,7 +201,7 @@ layout {
 
         // Color of the ring on the active monitor.
         // active-color "#7fc8ff"
-        active-color "#a8bfd2"
+        active-color "#b2cbe0"
 
         // Color of the ring on inactive monitors.
         //
@@ -232,7 +232,7 @@ layout {
         off
 
         width 4
-        active-color "#d6d6d6"
+        active-color "#e8e8e8"
         inactive-color "#505050"
 
         // Color of the border around windows that request your attention.
@@ -352,12 +352,6 @@ window-rule {
     }
 }
 
-window-rule {
-    match app-id=r#"^Minecraft"#
-    match title=r#"(?i)minecraft"#
-    opacity 1.0
-}
-
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
 /-window-rule {
@@ -410,7 +404,8 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
+    // Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
+    Mod+T hotkey-overlay-title="Open a Terminal: wezterm" { spawn "wezterm"; }
     Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "env" "LC_ALL=en_US.UTF-8" "fuzzel"; }
     Mod+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 

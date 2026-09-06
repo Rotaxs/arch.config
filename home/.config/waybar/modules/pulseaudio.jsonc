@@ -1,7 +1,7 @@
 {
     "pulseaudio": {
-        "format": "<span color='#9fc3c1'>{icon}</span> {volume}%",
-        "format-muted": "<span color='#8c8c8c'>󰝟</span> {volume}%",
+        "format": "<span color='#abd0ce'>{icon}</span> {volume}%",
+        "format-muted": "<span color='#a0a0a0'>󰝟</span> {volume}%",
         "format-icons": {
             "default": ["\uf027", "\uf027", "\uf028"]
         },

@@ -26,10 +26,10 @@ ring-wrong-color=bd8585
 key-hl-color=f2f2f2
 bs-hl-color=bd8585
 
-inside-color=16161680
-inside-clear-color=16161680
-inside-ver-color=16161680
-inside-wrong-color=16161680
+inside-color=20202099
+inside-clear-color=20202099
+inside-ver-color=20202099
+inside-wrong-color=20202099
 
 line-color=00000000
 line-clear-color=00000000

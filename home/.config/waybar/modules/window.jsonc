@@ -1,6 +1,6 @@
 {
     "niri/window": {
-        "format": "<span color='#d6d6d6'>󰣆</span> {title}",
+        "format": "<span color='#e8e8e8'>󰣆</span> {title}",
         "max-length": 35,
         "rewrite": {
             "": "Desktop"

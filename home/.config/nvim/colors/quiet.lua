@@ -6,19 +6,19 @@ vim.o.background = "dark"
 vim.g.colors_name = "quiet"
 
 local colors = {
-    bg = "#161616",
+    bg = "#202020",
     surface = "#202020",
-    elevated = "#2a2a2a",
-    border = "#444444",
-    muted = "#8c8c8c",
-    text = "#d6d6d6",
-    bright = "#f2f2f2",
-    red = "#bd8585",
-    green = "#94a899",
-    yellow = "#b3a783",
-    blue = "#94a3b2",
-    magenta = "#a797a8",
-    cyan = "#8da7a6",
+    elevated = "#363636",
+    border = "#505050",
+    muted = "#a0a0a0",
+    text = "#e8e8e8",
+    bright = "#fafafa",
+    red = "#d18b8b",
+    green = "#9ebaa5",
+    yellow = "#c2b486",
+    blue = "#9bb7cf",
+    magenta = "#b59ab6",
+    cyan = "#91b8b6",
 }
 
 local groups = {
@@ -74,18 +74,18 @@ for group, opts in pairs(groups) do
 end
 
 vim.g.terminal_color_0 = colors.elevated
-vim.g.terminal_color_1 = "#c47f7f"
-vim.g.terminal_color_2 = "#91ad98"
-vim.g.terminal_color_3 = "#b6a678"
-vim.g.terminal_color_4 = "#8faac1"
-vim.g.terminal_color_5 = "#aa8dab"
-vim.g.terminal_color_6 = "#84aaa8"
-vim.g.terminal_color_7 = "#dedede"
-vim.g.terminal_color_8 = "#555555"
-vim.g.terminal_color_9 = "#dc9696"
-vim.g.terminal_color_10 = "#a8c2ad"
-vim.g.terminal_color_11 = "#ccbc8d"
-vim.g.terminal_color_12 = "#a8bfd2"
-vim.g.terminal_color_13 = "#c0a5c1"
-vim.g.terminal_color_14 = "#9fc3c1"
-vim.g.terminal_color_15 = "#f6f6f6"
+vim.g.terminal_color_1 = "#d18b8b"
+vim.g.terminal_color_2 = "#9ebaa5"
+vim.g.terminal_color_3 = "#c2b486"
+vim.g.terminal_color_4 = "#9bb7cf"
+vim.g.terminal_color_5 = "#b59ab6"
+vim.g.terminal_color_6 = "#91b8b6"
+vim.g.terminal_color_7 = "#e6e6e6"
+vim.g.terminal_color_8 = "#666666"
+vim.g.terminal_color_9 = "#e2a0a0"
+vim.g.terminal_color_10 = "#b2cbb7"
+vim.g.terminal_color_11 = "#d4c492"
+vim.g.terminal_color_12 = "#b2cbe0"
+vim.g.terminal_color_13 = "#c9aec9"
+vim.g.terminal_color_14 = "#abd0ce"
+vim.g.terminal_color_15 = "#fafafa"

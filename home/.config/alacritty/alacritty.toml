@@ -12,62 +12,62 @@ italic = { family = "JetBrains Mono", style = "Italic" }
 bold_italic = { family = "JetBrains Mono", style = "Bold Italic" }
 
 [colors.primary]
-background = "#161616"
-foreground = "#e4e4e4"
-dim_foreground = "#a0a0a0"
-bright_foreground = "#f6f6f6"
+background = "#202020"
+foreground = "#e8e8e8"
+dim_foreground = "#a8a8a8"
+bright_foreground = "#fafafa"
 
 [colors.cursor]
-text = "#161616"
+text = "#202020"
 cursor = "#f2f2f2"
 
 [colors.vi_mode_cursor]
-text = "#161616"
+text = "#202020"
 cursor = "#d6d6d6"
 
 [colors.search.matches]
-foreground = "#161616"
+foreground = "#202020"
 background = "#a0a0a0"
 
 [colors.search.focused_match]
-foreground = "#161616"
+foreground = "#202020"
 background = "#f2f2f2"
 
 [colors.footer_bar]
-foreground = "#161616"
+foreground = "#202020"
 background = "#a0a0a0"
 
 [colors.hints.start]
-foreground = "#161616"
+foreground = "#202020"
 background = "#d6d6d6"
 
 [colors.hints.end]
-foreground = "#161616"
+foreground = "#202020"
 background = "#8c8c8c"
 
 [colors.selection]
-text = "#161616"
+text = "#202020"
 background = "#d6d6d6"
 
 [colors.normal]
-black = "#2a2a2a"
-red = "#c47f7f"
-green = "#91ad98"
-yellow = "#b6a678"
-blue = "#8faac1"
-magenta = "#aa8dab"
-cyan = "#84aaa8"
-white = "#dedede"
+black = "#363636"
+red = "#d18b8b"
+green = "#9ebaa5"
+yellow = "#c2b486"
+blue = "#9bb7cf"
+magenta = "#b59ab6"
+cyan = "#91b8b6"
+white = "#e6e6e6"
 
 [colors.bright]
-black = "#555555"
-red = "#dc9696"
-green = "#a8c2ad"
-yellow = "#ccbc8d"
-blue = "#a8bfd2"
-magenta = "#c0a5c1"
-cyan = "#9fc3c1"
-white = "#f6f6f6"
+black = "#666666"
+red = "#e2a0a0"
+green = "#b2cbb7"
+yellow = "#d4c492"
+blue = "#b2cbe0"
+magenta = "#c9aec9"
+cyan = "#abd0ce"
+white = "#fafafa"
 
 [[colors.indexed_colors]]
 index = 16
