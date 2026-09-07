@@ -398,6 +398,7 @@ binds {
     // My own key binds
     Mod+B hotkey-overlay-title="Open/Close waybar" { spawn-sh "pkill -x waybar || ~/.config/waybar/scripts/start.sh"; }
     Mod+Alt+V hotkey-overlay-title="Open clipboard" { spawn "sh" "-c" "cliphist list | fuzzel -d -p ' Clipboard: ' | cliphist decode | wl-copy"; }
+    Mod+Alt+W hotkey-overlay-title="Change wallpaper" { spawn "sh" "-c" "$HOME/.local/bin/wallpaper"; }
 
     // Mod-Shift-/, which is usually the same as Mod-?,
     // shows a list of important hotkeys.
