@@ -1,6 +1,23 @@
 {
     "clock": {
         "format": "<span color='#e8e8e8'>󰥔</span> {:%Y-%m-%d %a %H:%M}",
-        "tooltip": false
+        "tooltip": true,
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "month",
+            "iso8601": true,
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#b2cbe0'><b>{}</b></span>",
+                "days": "<span color='#e8e8e8'>{}</span>",
+                "weekdays": "<span color='#b2cbe0'><b>{}</b></span>",
+                "today": "<span color='#b2cbe0'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
     }
 }
