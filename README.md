@@ -9,7 +9,7 @@
 - 文件编辑器: [neovim](https://github.com/neovim/neovim), [vscode](https://code.visualstudio.com/)
 - 文件管理器: [yazi](https://github.com/sxyazi/yazi), [nautilus](https://github.com/GNOME/nautilus)
 - 资源监视器: [btop](https://github.com/aristocratos/btop)
-- 壁纸: [awww](https://codeberg.org/LGFae/awww)
+- 壁纸: [awww](https://codeberg.org/LGFae/awww), [mpvpaper](https://github.com/GhostNaN/mpvpaper)
 - 浏览器: [Zen Browser](https://zen-browser.app/)
 - 图片查看器: [imv](https://github.com/exec64/imv)
 - 视频播放器: [mpv](https://mpv.io/)

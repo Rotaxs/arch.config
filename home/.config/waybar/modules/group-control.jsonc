@@ -2,8 +2,8 @@
     "group/control": {
         "orientation": "horizontal",
         "modules": [
-            "pulseaudio",
-            "backlight",
+            "group/volume",
+            "group/brightness",
             "battery",
             "network",
             "bluetooth",

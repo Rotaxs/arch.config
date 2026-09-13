@@ -17,3 +17,42 @@
     transition: all 0.2s ease-in-out;
 }
 
+#backlight-slider,
+#pulseaudio-slider {
+    padding: 0;
+    margin: 0 8px;
+}
+
+#backlight-slider trough,
+#pulseaudio-slider trough {
+    min-width: 80px;
+    min-height: 2px;
+    padding: 0;
+    border: none;
+    border-radius: 1px;
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: none;
+}
+
+#backlight-slider highlight,
+#pulseaudio-slider highlight {
+    min-height: 2px;
+    border: none;
+    border-radius: 1px;
+    background-image: none;
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+#backlight-slider slider,
+#pulseaudio-slider slider {
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    border: none;
+    background-image: none;
+    box-shadow: none;
+}
