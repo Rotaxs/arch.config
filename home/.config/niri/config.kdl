@@ -352,6 +352,12 @@ window-rule {
     }
 }
 
+window-rule {
+    match title="nvim"
+    match app-id="zen"
+    opacity 0.85
+}
+
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
 /-window-rule {
@@ -408,7 +414,7 @@ binds {
     // Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
     Mod+T hotkey-overlay-title="Open a Terminal: wezterm" { spawn "wezterm"; }
     Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "env" "LC_ALL=en_US.UTF-8" "fuzzel"; }
-    Mod+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    Mod+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.

@@ -1,6 +1,11 @@
-@define-color base #202020;
-@define-color surface0 #202020;
-@define-color surface1 #2a2a2a;
-@define-color border #505050;
-@define-color text #e8e8e8;
-@define-color bright #fafafa;
+/* Graphite palette */
+@define-color backdrop       #111315;
+@define-color panel          #1b1e21;
+@define-color panel_hover    #292d31;
+@define-color panel_active   #343a3f;
+@define-color border         #3b4045;
+@define-color border_hover   #747b82;
+@define-color text           #e7e9ea;
+@define-color text_muted     #aeb4b9;
+@define-color accent         #d7dadd;
+@define-color danger         #c98282;

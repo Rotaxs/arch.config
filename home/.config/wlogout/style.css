@@ -1,57 +1,68 @@
 @import "color.css";
 
+/* Graphite wlogout theme */
 * {
-	background-image: none;
-	box-shadow: none;
+    background-image: none;
+    box-shadow: none;
+    font-family: "Noto Sans", "Inter", sans-serif;
+    font-size: 15px;
 }
 
 window {
-	background-color: alpha(@base, 0.9);
+    background-color: alpha(@backdrop, 0.94);
 }
 
 button {
-    border-radius: 0;
-    border-color: @border;
-	text-decoration-color: @text;
+    margin: 14px;
+    border: 1px solid @border;
+    border-radius: 22px;
+    color: @text_muted;
+    background-color: alpha(@panel, 0.96);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22%;
+    box-shadow: 0 10px 26px alpha(#000000, 0.34);
+    text-shadow: 0 1px 2px alpha(#000000, 0.8);
+}
+
+button:hover,
+button:focus {
     color: @text;
-	background-color: @surface0;
-	border-style: solid;
-	border-width: 1px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 25%;
+    background-color: @panel_hover;
+    border-color: @border_hover;
+    box-shadow:
+        0 12px 30px alpha(#000000, 0.46),
+        inset 0 0 0 1px alpha(@accent, 0.10);
+    outline-style: none;
 }
 
-button:active, button:hover {
-	background-color: @bright;
-	color: @base;
-	outline-style: none;
+button:active {
+    color: @accent;
+    background-color: @panel_active;
+    border-color: @accent;
+    box-shadow: inset 0 2px 8px alpha(#000000, 0.42);
 }
 
+/* Local SVGs use a graphite-friendly silver instead of the stock black icons. */
 #lock {
-    background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+    background-image: url("icons/lock.svg");
 }
 
 #logout {
-    background-image: image(url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
-}
-
-#suspend {
-    border-bottom-right-radius: 15px;
-    background-image: image(url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
-}
-
-#hibernate {
-    border-top-right-radius: 15px;
-    background-image: image(url("/usr/share/wlogout/icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
+    background-image: url("icons/logout.svg");
 }
 
 #shutdown {
-    border-top-left-radius: 15px;
-    background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+    color: @danger;
+    background-image: url("icons/shutdown.svg");
+}
+
+#shutdown:hover,
+#shutdown:focus {
+    color: #e5aaaa;
+    border-color: @danger;
 }
 
 #reboot {
-    border-bottom-left-radius: 15px;
-    background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+    background-image: url("icons/reboot.svg");
 }
