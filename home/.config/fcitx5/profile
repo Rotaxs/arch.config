@@ -1,23 +1,23 @@
 [Groups/0]
 # Group Name
-Name=默认
+Name=Default
 # Layout
 Default Layout=us
 # Default Input Method
-DefaultIM=rime
+DefaultIM=pinyin
 
 [Groups/0/Items/0]
 # Name
 Name=keyboard-us
 # Layout
-Layout=
+# Layout=
 
 [Groups/0/Items/1]
 # Name
-Name=rime
+Name=pinyin
 # Layout
-Layout=
+# Layout=
 
 [GroupOrder]
-0=默认
+0=Default
 
