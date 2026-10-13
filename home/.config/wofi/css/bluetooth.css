@@ -1,0 +1,16 @@
+@import url("file:///home/aozu/.config/wofi/css/style.css");
+
+#scroll viewport {
+    padding: 4px;
+}
+
+#entry {
+    margin: 3px 4px;
+    border-radius: 10px;
+}
+
+#entry box, #entry label {
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+}

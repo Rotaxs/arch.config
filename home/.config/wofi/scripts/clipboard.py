@@ -62,7 +62,7 @@ def main():
                 "wofi", "--show", "dmenu",
                 "--style", str(Path(os.environ.get(
                     "XDG_CONFIG_HOME", Path.home() / ".config"
-                )) / "wofi/clipboard.css"),
+                )) / "wofi/css/clipboard.css"),
                 "--prompt", "剪贴板",
                 "--allow-images",
                 "--width", "640",

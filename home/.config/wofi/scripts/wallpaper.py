@@ -37,7 +37,7 @@ def menu(entries, prompt, gallery=False):
     ]
     if gallery:
         command += [
-            "--style", str(CONFIG / "wallpaper.css"),
+            "--style", str(CONFIG / "css/wallpaper.css"),
             "--width", "820", "--height", "540", "--columns", "3",
             "--hide-search", "--allow-images", "--define", "image_size=220",
         ]

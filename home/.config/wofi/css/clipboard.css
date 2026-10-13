@@ -1,4 +1,4 @@
-@import url("file:///home/aozu/.config/wofi/style.css");
+@import url("file:///home/aozu/.config/wofi/css/style.css");
 
 /* Inset rows so the scrolled viewport cannot cut off their right corners. */
 #scroll viewport {
