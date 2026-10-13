@@ -1,0 +1,16 @@
+@import url("file:///home/aozu/.config/wofi/style.css");
+
+#entry {
+    padding: 10px;
+    margin: 5px;
+}
+
+#img {
+    margin: 0;
+}
+
+#text {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}

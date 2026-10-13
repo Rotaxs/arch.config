@@ -1,0 +1,80 @@
+@define-color base rgba(32, 32, 32, 0.97);
+@define-color surface #2a2a2a;
+@define-color selection #363636;
+@define-color border #505050;
+@define-color text #e8e8e8;
+@define-color muted #a0a0a0;
+@define-color accent #b2cbe0;
+
+* {
+    font-family: "LXGW WenKai Medium", "LXGW WenKai", "Noto Sans CJK SC", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+window {
+    background-color: @base;
+    color: @text;
+    border: 1px solid @border;
+    border-radius: 16px;
+}
+
+#outer-box {
+    padding: 18px;
+}
+
+#input {
+    margin: 0 0 14px;
+    padding: 12px 14px;
+    min-height: 24px;
+    color: @text;
+    background-color: @surface;
+    border: 1px solid @border;
+    border-radius: 10px;
+    box-shadow: none;
+    caret-color: @accent;
+}
+
+#input:focus {
+    border-color: @accent;
+}
+
+#input image {
+    color: @muted;
+}
+
+#scroll, #inner-box {
+    background-color: transparent;
+    border: none;
+}
+
+#entry {
+    padding: 10px 12px;
+    margin: 2px 0;
+    min-height: 30px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+#entry:selected {
+    background-color: @selection;
+    border-color: @border;
+}
+
+#entry:focus {
+    outline: none;
+}
+
+#img {
+    margin-right: 12px;
+}
+
+#text {
+    color: @text;
+    margin: 0;
+}
+
+#text:selected {
+    color: @accent;
+}

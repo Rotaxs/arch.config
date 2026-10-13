@@ -1,0 +1,14 @@
+width=560
+height=480
+location=center
+prompt=搜索应用…
+insensitive=true
+matching=fuzzy
+allow_images=true
+image_size=28
+allow_markup=false
+hide_scroll=true
+gtk_dark=true
+columns=1
+no_actions=true
+term=wezterm

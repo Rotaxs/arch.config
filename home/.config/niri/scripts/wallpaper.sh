@@ -24,13 +24,24 @@ VIDEO_DIR="$WALLPAPER_DIR/videos"
 
 
 # ------------------------------------------------------------
-# fuzzel 菜单
+# fuzzel/wofi 菜单
 # ------------------------------------------------------------
 
-menu() {
-    fuzzel --dmenu --prompt="$1"
-}
+# menu() {
+#     fuzzel --dmenu --prompt="$1"
+# }
 
+
+menu() {
+    wofi --show dmenu \
+        --prompt "$1" \
+        --width 640 \
+        --height 480 \
+        --cache-file /dev/null \
+        --no-custom-entry \
+        --define allow_images=false \
+        --define allow_markup=false
+}
 
 # ------------------------------------------------------------
 # 1. 选择壁纸类型

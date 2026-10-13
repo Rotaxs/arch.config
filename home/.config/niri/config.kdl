@@ -2,10 +2,7 @@
 // "/-" comments out the following node.
 // Check the wiki for a full description of the configuration:
 // https://niri-wm.github.io/niri/Configuration:-Introduction
-environment {
-	LC_MESSAGES "zh_CN.UTF-8"
-	XMODIFIERS "@im=fcitx"
-}
+
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Input
@@ -305,11 +302,8 @@ spawn-sh-at-startup "~/.config/waybar/scripts/manager.sh"
 spawn-at-startup "fcitx5"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "awww-daemon"
+spawn-at-startup "xwayland-satellite"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
-spawn-at-startup "~/.config/niri/scripts/swayidle.sh"
-
-// To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
-// spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
@@ -339,7 +333,7 @@ animations {
     // off
 
     // Slow down all animations by this factor. Values below 1 speed them up instead.
-    // slowdown 3.0
+    slowdown 1.5
 }
 
 window-rule {
@@ -403,8 +397,9 @@ binds {
 
     // My own key binds
     Mod+B hotkey-overlay-title="Open/Close waybar" { spawn-sh "pkill -x waybar || ~/.config/waybar/scripts/start.sh"; }
-    Mod+Alt+V hotkey-overlay-title="Open clipboard" { spawn "sh" "-c" "cliphist list | fuzzel -d -p ' Clipboard: ' | cliphist decode | wl-copy"; }
-    Mod+Alt+W hotkey-overlay-title="Change wallpaper" { spawn "sh" "-c" "$HOME/.config/niri/scripts/wallpaper.sh"; }
+    // Mod+Alt+V hotkey-overlay-title="Open clipboard" { spawn "sh" "-c" "cliphist list | fuzzel -d -p ' Clipboard: ' | cliphist decode | wl-copy"; }
+    Mod+Alt+V hotkey-overlay-title="Open clipboard" { spawn-sh "python3 $HOME/.config/wofi/scripts/clipboard.py"; }
+    Mod+Alt+W hotkey-overlay-title="Change wallpaper" { spawn "sh" "-c" "python3 \"$HOME/.config/wofi/scripts/wallpaper.py\""; }
 
     // Mod-Shift-/, which is usually the same as Mod-?,
     // shows a list of important hotkeys.
@@ -413,7 +408,8 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     // Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
     Mod+T hotkey-overlay-title="Open a Terminal: wezterm" { spawn "wezterm"; }
-    Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "env" "LC_ALL=en_US.UTF-8" "fuzzel"; }
+    // Mod+Space hotkey-overlay-title="Run an Application: wofi" { spawn "env" "LC_ALL=en_US.UTF-8" "fuzzel"; }
+    Mod+Space hotkey-overlay-title="Run an Application: wofi" { spawn  "wofi" "--show" "drun"; }
     Mod+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
 
     // Example volume keys mappings for PipeWire & WirePlumber.

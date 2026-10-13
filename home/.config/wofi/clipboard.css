@@ -1,0 +1,23 @@
+@import url("file:///home/aozu/.config/wofi/style.css");
+
+/* Inset rows so the scrolled viewport cannot cut off their right corners. */
+#scroll viewport {
+    padding: 4px;
+}
+
+#entry {
+    margin: 3px 4px;
+    border-radius: 10px;
+}
+
+#entry:selected {
+    border-radius: 10px;
+    background-image: none;
+}
+
+/* Paint selection on the outer row only, not its square child widgets. */
+#entry box, #entry label, #entry image {
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+}

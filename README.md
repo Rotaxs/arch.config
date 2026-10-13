@@ -180,13 +180,16 @@ sudo systemctl enable greetd
 - `greetd`: 提供登录管理器的守护进程
 - `greetd-tuigreet`: 基于 `greetd` 的登录管理器前端
 
-## 其他
+## 字体和主题
 
 解决 Chrome 标签栏字体不是中文字体的问题
 
 ```bash
 # 1. 设置颜色模式为暗色
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+gsettings set org.gnome.desktop.interface gtk-theme    'Adwaita'
+gsettings set org.gnome.desktop.interface icon-theme   'Adwaita'
+gsettings set org.gnome.desktop.interface cursor-theme 'Adwaita'
 # 2. 设置系统界面字体
 gsettings set org.gnome.desktop.interface font-name 'Noto Sans CJK SC 11'
 ```
