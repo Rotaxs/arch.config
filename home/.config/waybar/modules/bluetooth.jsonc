@@ -5,6 +5,6 @@
         "format-on": "<span color='#b2cbe0'>󰂯</span> {num_connections}",
         "tooltip-format": "Bluetooth Addr\t{controller_address}\n\n{controller_alias}\t{num_connections} connected",
         "on-click": "bash ~/.config/waybar/scripts/bluetooth.sh",
-        "on-click-right": "alacritty -e bluetui"
+        "on-click-right": "python3 \"$HOME/.config/wofi/scripts/bluetooth.py\""
     }
 }

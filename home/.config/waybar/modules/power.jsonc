@@ -2,6 +2,6 @@
     "custom/power": {
         "format": "<span color='#e2a0a0'>⏻</span>",
         "tooltip": false,
-        "on-click": "wlogout"
+        "on-click": "python3 \"$HOME/.config/wofi/scripts/power.py\""
     }
 }
