@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
 
-config.default_prog = { "/bin/zsh" }
+config.default_prog = { "/bin/fish" }
 
 config.font = wezterm.font_with_fallback({ "JetBrains Mono", "LXGW WenKai" })
 config.font_size = 12.0
