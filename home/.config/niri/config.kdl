@@ -397,6 +397,7 @@ binds {
 
     // My own key binds
     Mod+B hotkey-overlay-title="Open/Close waybar" { spawn-sh "pkill -x waybar || ~/.config/waybar/scripts/start.sh"; }
+    Mod+S { spawn-sh "python3 $HOME/.config/wofi/scripts/power.py"; }
     // Mod+Alt+V hotkey-overlay-title="Open clipboard" { spawn "sh" "-c" "cliphist list | fuzzel -d -p ' Clipboard: ' | cliphist decode | wl-copy"; }
     Mod+Alt+V hotkey-overlay-title="Open clipboard" { spawn-sh "python3 $HOME/.config/wofi/scripts/clipboard.py"; }
     Mod+Alt+W hotkey-overlay-title="Change wallpaper" { spawn "sh" "-c" "python3 \"$HOME/.config/wofi/scripts/wallpaper.py\""; }
